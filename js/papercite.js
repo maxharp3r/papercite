@@ -1,12 +1,8 @@
 
-
-var $j = jQuery.noConflict();
-
-$j(document).ready(function() {
+jQuery(document).ready(function() {
     // Toggle Single Bibtex entry
-    $j('a.papercite_toggle').click(function() {
-	$j( "#" + $j(this).attr("id") + "_block" ).toggle();
-	return false;
+    jQuery('a.papercite_toggle').click(function() {
+        jQuery( "#" + jQuery(this).attr("id") + "_block" ).toggle();
+	    return false;
     });
 });
-
